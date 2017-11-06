@@ -49,7 +49,7 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(13, 13);
+            this.lblUsuario.Location = new System.Drawing.Point(30, 36);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(43, 13);
             this.lblUsuario.TabIndex = 1;
@@ -57,14 +57,14 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(126, 13);
+            this.txtUsuario.Location = new System.Drawing.Point(143, 36);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(122, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(167, 20);
             this.txtUsuario.TabIndex = 1;
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(319, 71);
+            this.btnAceptar.Location = new System.Drawing.Point(336, 94);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 3;
@@ -74,16 +74,16 @@
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(126, 73);
+            this.txtPass.Location = new System.Drawing.Point(143, 96);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(122, 20);
+            this.txtPass.Size = new System.Drawing.Size(167, 20);
             this.txtPass.TabIndex = 2;
             this.txtPass.UseSystemPasswordChar = true;
             // 
             // lblPass
             // 
             this.lblPass.AutoSize = true;
-            this.lblPass.Location = new System.Drawing.Point(13, 76);
+            this.lblPass.Location = new System.Drawing.Point(30, 99);
             this.lblPass.Name = "lblPass";
             this.lblPass.Size = new System.Drawing.Size(53, 13);
             this.lblPass.TabIndex = 5;

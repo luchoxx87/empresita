@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace Empresita
 {
+    /// <summary>
+    /// Clase con el objetivo de conectar a la BD y mostrar
+    /// como traer una tabla
+    /// </summary>
     public partial class frmPrincipal : Form
     {
         public frmPrincipal()
@@ -27,11 +31,20 @@ namespace Empresita
             try
             {
                 //Asigno cadena de conexion
-                string cadena = string.Format("Server=win2012-01;Database=bd47_autoEmpresa;Uid={0};Pwd={1};", txtUsuario.Text, txtPass.Text);
+                string cadena = string.Format("Server=win2012-01;Database=bd47_autoempresa;Uid={0};Pwd={1};", txtUsuario.Text, txtPass.Text);
                 //Instancio mi DB
                 DB db = new DB(cadena);
                 //Asigno la tabla de empleados como fuente del dataGridView
                 dgvVisor.DataSource = db.traerEmpleados();
+                //Instancio el formulario frmAltaSucursal, pasandole
+                //como parametro, la DB
+                frmAltaSucursal altaSucursal = new frmAltaSucursal(db);
+                //Muestro el formulario que instancie
+                altaSucursal.Show();
+                frmAltaDepartamento altaDepartamento = new frmAltaDepartamento(db);
+                frmAltaEmpleado altaEmpleado = new frmAltaEmpleado(db);
+                altaEmpleado.Show();
+                altaDepartamento.Show();
             }
             catch (Exception e)
             {
