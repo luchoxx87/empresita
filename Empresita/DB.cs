@@ -98,6 +98,10 @@ namespace Empresita
             comando.Parameters.Add(param);
         }
 
+        /// <summary>
+        /// Devuelve la tabla de de Departamentos con idDepartamento como primera columna y 
+        /// </summary>
+        /// <returns></returns>
         internal DataTable traerDepartamentos()
         {
             string query = "SELECT idDepartamento, concat(departamento,', ',piso,'°') Depto FROM Departamento ORDER BY Depto ASC";
